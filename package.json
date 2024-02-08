@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build"
   },
-  "author": "Thor Anderson",
+  "author": "Trace Cooney",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
