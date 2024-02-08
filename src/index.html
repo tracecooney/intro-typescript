@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to TypeScript</title>
-</head>
-<body>
-    <h1>welcome to my Typescript site</h1>
-</body>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Got this stylesheet from hightlightjs.org vs2015-->
+    <link rel="stylesheet" href="styles/vs2015.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.ts" defer type="module"></script>
+    <title>Introduction to TypeScript!</title>
+  </head>
+  <body class="bg-primary flex-col h-screen overflow-hidden">
+    <header>
+      <h1 class="text-2xl bg-primary-content p-4 text-center">
+        Welcome to my TypeScript site!
+      </h1>
+    </header>
+    <main class="flex h-full">
+      <nav class="bg-primary-content min-w-40 p-2">
+        <ul class="flex flex-col">
+          <li><button class="btn btn-sm mx-2 w-32" id="basicTypesButton">Basic Types</button></li>
+          <li><button class="btn btn-sm m-2 w-32" id="arrayTypesButton">Array Types</button></li>
+          <li><button class="btn btn-sm mx-2 w-32" id="specialTypesButton">Special Types</button></li>
+        </ul>
+      </nav>
+      <div class="p-2">
+        <h3 id="cardTitle"></h3>
+        <p id="cardExplanation"></p>
+        <div id="codeDiv" class="bg-primary-content rounded-lg">
+          <pre>
+            <code id="cardCode" class="text-wrap"></code>
+          </pre>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="bg-primary-content fixed bottom-0 w-full p-2 text-center">
+        &copy; 2024 Trace Cooney
+      </p>
+    </footer>
+  </body>
 </html>

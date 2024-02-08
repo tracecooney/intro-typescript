@@ -1,22 +1,22 @@
-import { resolve } from 'path'
-import { defineConig } from 'vite'
+import { resolve } from "path"
+import { defineConfig } from "vite"
 
-const root = resolvel(__dirname, 'src')
-const outDir = resolvel(__dirname, 'dist')
+const root = resolve(__dirname, "src")
+const outDir = resolve(__dirname, "dist")
 
-export default defineConig ({
-    root,
-    build: {
-        outDir,
-        emptyOutDir: true,
-        rollupOptions: {
-        input: {
-            main: resolve(root, 'index.html'),
-            // nested: resolve(root, 'nested/index.html'),
-        },
-        },
+export default defineConfig({
+  root,
+  build: {
+    outDir,
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: resolve(root, "index.html"),
+        // nested: resolve(root, 'nested/index.html'),
+      },
     },
-    server: {
-        port: 3000,
-    },
+  },
+  server: {
+    port: 2720,
+  },
 })
