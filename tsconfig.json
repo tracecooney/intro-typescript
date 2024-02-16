@@ -3,7 +3,14 @@
     "target": "ES2020",
     "module": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "moduleResolution": "bundler"
+    /* I changed this to Node because I kept geeting an error.
+      I used ChatGBT to explan it to me and it said this: 
+      As of my knowledge cutoff date in January 2022, 
+      TypeScript's moduleResolution option does not support 
+      a value of "bundler" directly. The valid options for moduleResolution 
+      are typically "node", "classic", "node16", and "nodenext".
+    */
+    "moduleResolution": "Node"
   },
   "include": ["src"],
   "exclude": ["node_modules"]
